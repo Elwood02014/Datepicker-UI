@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Datepicker-UI {
+    left: 50%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Date {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    border: 2px solid #000;
+}
+
+input {
+    border-right: #000 solid 2px;
+    margin: 0;
+    width: 140px;
+    border: none;
+    outline: none; /* прибирає фокусне підсвічування */
+}
+
+.img-call {
+    width: 33px;
+    height: 33.2px;
+    border: solid 2px #000;
+}
+
+
+img {
+    width: 29px;
+    height: 29px;
+}
+
+.Calendar {
+    width: 184px;                  /* ← Встановлюємо фіксовану ширину */
+    display: inline-block;
+    border: 2px solid #000;
+    font-family: sans-serif;
+    margin-top: 10px;
+    padding: 5px;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    background-color: white;
+}
+
+  
+  .block {
+    display: flex;                  /* Розташування елементів в один рядок */
+    align-items: center;           /* Вертикальне вирівнювання */
+    justify-content: space-between;
+    margin-bottom: 8px;            /* Відступ вниз перед днями тижня */
+  }
+  
+  .but {
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .dec {
+    flex: 1;                        /* Назва місяця займає максимум простору */
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .weekdays {
+    display: flex;                 /* Розміщення днів в ряд */
+    justify-content: space-between;
+  }
+  
+  .weekdays span {
+    flex: 1;                       /* Кожен день тижня займає однакову ширину */
+    text-align: center;
+  }
+  
